@@ -4,6 +4,12 @@ Témata pod Lupou je platforma pro sběr podnětů a témat od čtenářů. Pomo
 
 Tento projekt vznikl ve spoluprácí NFNZ a Česko.Digital.
 
+## Jak to funguje
+Přidanou hodnotou Témat pod lupou je dát čtenářům možnost reálně něco změnit ve svém okolí a zároveň si vybudovat důvěru v novináře a média. Na straně druhé dát novinářům možnost poznat, co lidi v jejich regionu opravdu pálí a zaměřit se tak na témata, která jim přinesou nejvíce čtenářů.
+
+Inspiraci našel tým u novináře Johna D. Suttera ze CNN. Jeho crowdsourcing témat vyzval čtenáře, aby vybrali pět témat, kterými se má zabývat. Za sedm dní přišlo 32 546 hlasů. Vybraná témata žurnalistu překvapila a jejich volbu hodnotil jako moudrou. Pilotní crowdsourcingový projekt ho motivoval k dalším crowdsourcingovým aktivitám. Jak jsme náš prototyp testovali s redakci Drbna.cz najdete zde: https://docs.google.com/document/d/1qQwiHLGnEgOeArn54oMb6n9xuWjT1cMnLMRvIdFVqDg/
+
+
 # Návod k použití
 
 Tato sekce obsahuje návod pro správnou konfiguraci systému, vytvoření a provoz sběru témat a stažení výsledků. Kroky potřebné k prvnotní instalaci platformy jsou uvedeny v dalších sekcích.
