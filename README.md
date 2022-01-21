@@ -1,13 +1,15 @@
-# Inovace Zpravodajského Storytellingu - Témata pod Lupou
+## Idea Témata pod Lupou 
+Přidanou hodnotou Témat pod lupou je dát čtenářům možnost reálně něco změnit ve svém okolí a zároveň si vybudovat důvěru v novináře a média. Na straně druhé dát novinářům možnost poznat, co lidi opravdu nejvíce zajímá a zaměřit se tak na témata, která jim přinesou nejvíce čtenářů. Inspiraci našel tým u novináře Johna D. Suttera ze CNN, který takto zmobilizoval desetitisíce čtenářů. 
 
-Témata pod Lupou je platforma pro sběr podnětů a témat od čtenářů. Pomocí jednoduchého rozhraní si redakce vytvoří a uzpůsobí formuláře pro sběr témat, a pomocí jediného skriptu jednoduše vloží banner či formulář na svůj web. Platforma zajistí sběr témat, včetně nahrání doprovodného materiálu jako jsou fotky či videa, a umožní redakcím procházet či stáhnout zaslaná témata.
+## Inovace Zpravodajského Storytellingu
+Projekt vznikl ve spoluprácí Nadačního fondu nezávislé žurnalistiky a Česko.Digital. Cílem bylo navrhnout prototyp, který by dostat zpravodajství k lidem, kteří zprávy nečtou (dle výzkumu se jedná o více než 30 % populace). Zapojili jsme 150 expertních dobrovolníků a novináře z 10 redakcí. Ověřovali jsme si hypotézy, ptali se novinářů i mediálních domů. Idea chatbota zvítězila v konkurenci téměř stovky nápadů.
 
-Tento projekt vznikl ve spoluprácí NFNZ a Česko.Digital.
+## Koncept v kostce
+Témata pod Lupou je způsob, jak umožnit čtenářům participovat na výběru témat, které redakce zpracovávají. Redakce si vloží formulář pro sběr témat například na svou webovou stránku nebo do speciálního článku, kde vyzve čtenáře, aby se podělil o zajímavé téma ke zpracování, o čem se má psát. Po ukočení sběru vyhlásí redakce hlasování o nejlepší témata. Nejlepší témata pak redakce zpracuje a poděkuje autorům vítězných témat. Témata pod Lupou umožňuje sběr témat, včetně nahrání doprovodného materiálu jako jsou fotky či videa, a umožní redakcím procházet či stáhnout zaslaná témata.
+<img width="642" alt="obrazek" src="https://user-images.githubusercontent.com/69157075/150546148-f84c7413-791d-47fe-a166-98ee9ad24ac6.png">
 
 ## Jak to funguje
-Přidanou hodnotou Témat pod lupou je dát čtenářům možnost reálně něco změnit ve svém okolí a zároveň si vybudovat důvěru v novináře a média. Na straně druhé dát novinářům možnost poznat, co lidi v jejich regionu opravdu pálí a zaměřit se tak na témata, která jim přinesou nejvíce čtenářů.
-
-Inspiraci našel tým u novináře Johna D. Suttera ze CNN. Jeho crowdsourcing témat vyzval čtenáře, aby vybrali pět témat, kterými se má zabývat. Za sedm dní přišlo 32 546 hlasů. Vybraná témata žurnalistu překvapila a jejich volbu hodnotil jako moudrou. Pilotní crowdsourcingový projekt ho motivoval k dalším crowdsourcingovým aktivitám. Jak jsme náš prototyp testovali s redakci Drbna.cz najdete zde: https://docs.google.com/document/d/1qQwiHLGnEgOeArn54oMb6n9xuWjT1cMnLMRvIdFVqDg/
+Jak jsme náš prototyp testovali s redakci Drbna.cz najdete buď ve zkratce v [prezentaci](https://docs.google.com/presentation/d/1G5xDPy9cBN-K8Sk93r8C4FAU9HwOow2n/edit#slide=id.p4) nebo [případové studii](https://docs.google.com/document/d/1qQwiHLGnEgOeArn54oMb6n9xuWjT1cMnLMRvIdFVqDg/edit?usp=sharing).
 
 
 # Návod k použití
