@@ -1,4 +1,4 @@
-# Inovace Zpravodajskéko Storytellingu - Témata pod Lupou
+# Inovace Zpravodajského Storytellingu - Témata pod Lupou
 
 Témata pod Lupou je platforma pro sběr podnětů a témat od čtenářů. Pomocí jednoduchého rozhraní si redakce vytvoří a uzpůsobí formuláře pro sběr témat, a pomocí jediného skriptu jednoduše vloží banner či formulář na svůj web. Platforma zajistí sběr témat, včetně nahrání doprovodného materiálu jako jsou fotky či videa, a umožní redakcím procházet či stáhnout zaslaná témata.
 
@@ -118,3 +118,5 @@ Pro databázi se doporučuje MS SQL Server. Pro menší redakce je ale možné p
 1) Vypln formular a odesli
 1) Odeslana data se zobrazi v sekci `Content` pod formularem, ktery byl odeslan
     1) Muze byt nutne zmacknout na formular pravym tlacitkem a vybrat `Reload` 
+
+V případě problémů založte issue.
