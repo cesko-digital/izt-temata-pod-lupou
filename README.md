@@ -6,6 +6,7 @@ Projekt vznikl ve spoluprácí Nadačního fondu nezávislé žurnalistiky a Če
 
 ## Koncept v kostce
 Témata pod Lupou je způsob, jak umožnit čtenářům participovat na výběru témat, které redakce zpracovávají. Redakce si vloží formulář pro sběr témat například na svou webovou stránku nebo do speciálního článku, kde vyzve čtenáře, aby se podělil o zajímavé téma ke zpracování, o čem se má psát. Po ukočení sběru vyhlásí redakce hlasování o nejlepší témata. Nejlepší témata pak redakce zpracuje a poděkuje autorům vítězných témat. Témata pod Lupou umožňuje sběr témat, včetně nahrání doprovodného materiálu jako jsou fotky či videa, a umožní redakcím procházet či stáhnout zaslaná témata.
+
 <img width="642" alt="obrazek" src="https://user-images.githubusercontent.com/69157075/150546148-f84c7413-791d-47fe-a166-98ee9ad24ac6.png">
 
 ## Jak to funguje
