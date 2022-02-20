@@ -1,4 +1,4 @@
-## Idea Témata pod Lupou 
+# Témata pod Lupou 
 Přidanou hodnotou Témat pod lupou je dát čtenářům možnost reálně něco změnit ve svém okolí a zároveň si vybudovat důvěru v novináře a média. Na straně druhé dát novinářům možnost poznat, co lidi opravdu nejvíce zajímá a zaměřit se tak na témata, která jim přinesou nejvíce čtenářů. Inspiraci našel tým u novináře Johna D. Suttera ze CNN, který takto zmobilizoval desetitisíce čtenářů. 
 
 ## Inovace Zpravodajského Storytellingu
@@ -12,7 +12,6 @@ Témata pod Lupou je způsob, jak umožnit čtenářům participovat na výběru
 ## Jak to funguje
 Jak jsme náš prototyp testovali s redakci Drbna.cz najdete buď ve zkratce v [prezentaci](https://docs.google.com/presentation/d/1G5xDPy9cBN-K8Sk93r8C4FAU9HwOow2n/edit#slide=id.p4) nebo [případové studii](https://docs.google.com/document/d/1qQwiHLGnEgOeArn54oMb6n9xuWjT1cMnLMRvIdFVqDg/edit?usp=sharing).
 
-
 # Návod k použití
 
 Tato sekce obsahuje návod pro správnou konfiguraci systému, vytvoření a provoz sběru témat a stažení výsledků. Kroky potřebné k prvnotní instalaci platformy jsou uvedeny v dalších sekcích.
@@ -23,11 +22,12 @@ Jedna instalace platformy Témata pod lupou může obsluhovat i více redakcí. 
 
 1. V sekci `Content` vytvořte dokument typu `Media` (= redakce)
     - Pro velké redakce můžete volitelně z dokumentů typu `Media` vytvořit hierarchii a lépe tak členit obsah a přístupová práva
-1. Každé redakci (dokumentu typu `Media`) na nejvyšší úrovni (a nikoliv tedy vnořeným dokumentům téhož typu) přiřaďte doménu s unikátní cestou
+    - Pro uložení je potreba kliknout na `Save and Publish`
+1. Každé redakci (dokumentu typu `Media`) na nejvyšší úrovni (a nikoliv tedy vnořeným dokumentům téhož typu) volitelně přiřaďte unikátní adresu
     - Pravým tlačitkem kliněte na zvolenou redakci a stiskněte `Culture and Hostnames`
     - Do domén vložte požadovaný záznam ve tvaru `domena/cesta` např. `sber-temat.cz/zpravodaj-z-kocourkova`, vyberte požadovaný jazyk a kliněte na `Save`
 1. V sekci `Media` vytvořte složky (`Folder`) tak, aby jejich struktura odpovídala struktuře dokumentů typu `Media` v sekci `Content`
-    - Pod každou takto vytvořenou složkou vytvořte další stejného typu s názvem `Obsah od čtenářů`, kam se bude nahrávat uživatelský obsah z odeslaných formulářů 
+    - Pod každou takto vytvořenou složkou vytvořte další stejného typu s názvem `Obsah od čtenářů`, kam se bude nahrávat uživatelský obsah z odeslaných formulářů
 1. V sekci `Users` vytvořte nové uživatele pro členy redakce
     - Členy vytvořte s právy skupiny `Editors`
     - V poli `Content start nodes` vyberte nově vytvořené relevantní dokumenty typu `Media` ze sekce `Content`
@@ -76,50 +76,77 @@ Odeslané odpovědi se uloží jako nové dokumenty pod samotný formulář. Tyt
 
 Odpovědi je také možné stáhnout ve formátu CSV a dále zpracovávat např v Excelu či Google Sheets, a to výběrem položky `Download Submissions` pro stisku relevantního formuláře pravým tlačítkem.
 
-# Instalace pro ostrý provoz
+# Instalace a provoz systému
 
-K instalaci je potřeba pomoc od IT oddělení - odborníka, ale instalace samotná není složitá. Jedná se o klasický ASP.NET MVC projekt a může běžet jak v cloudu (Azure) nebo na vlastním serveru (IIS). 
+Témta pod lupou využívají redakční systém [Umbraco](https://umbraco.com/) 8 a běží proto pouze na operačním systému Windows.
 
-Tato platforma používá CMS systém Umbraco 8 a z tohoto důvodu vyžaduje operační systém Windows. V době psaní tohoto návodu je již dostupné Umbraco verze 9, které běží na Linuxu, ale tato platforma zatím na verzi 9 nebyla aktualizována.
+_Dnes je již k dispozici redakční systém Umbraco 9, který běží i na operačních systémech Linux a MacOS. Aktualizace pro případné zájemce by trvala několik hodin._
 
-Pro databázi se doporučuje MS SQL Server. Pro menší redakce je ale možné použít vestavěný SQL CE. Je nutné ale ověřit správné nastavení v souboru Web.config a po prvnotním spuštení a natavení systému spustit uSync, který v prázdné databázi vytvoří všechny stavební bloky platformy Témata pod lupou.
+## Lokální instalace
 
-# Vývoj
+Lokální instalace slouží k prvotnímu seznámení se s nástrojem Témata pod lupou a dále pak k případným úpravám a nasazení do produkčního prostředí.
 
-## Nástroje
+### Nástroje
 
-- IDE, vyber jeden z:
-  - Visual Studio 2019 Community Edition, behem instalace vybrat
-    - ASP.NET and web development workload
-  - JetBrains Rider
-  - VS Code (nezkouseno, budou potreba nejake plugins)
+Pro spuštění webu je potřeba nainstalovat vývojové prostředí, k dispozici jsou:
 
-## Instalace
+- [`Visual Studio 2022 Community Edition`](https://visualstudio.microsoft.com/downloads/)
+    - Zdarma
+    - Výchozí nástroj pro vývoj podobných systémů
+    - Během instalace je nutné vybrat `ASP.NET and web development workload`
+- [`JetBrains Rider`](https://www.jetbrains.com/rider/)
+    - Komerční alternativa
+- [`VS Code`](https://code.visualstudio.com/)
+    - Zdarma
+    - Nevyzkoušeno, ale mělo by fungovat
+    - Budou potřeba nějaká rozšíření
 
-1) Otevri slozku src\TemataPodLupou.Web\App_Data
-1) Vytvor kopii souboru UmbracoSeed.sdf jmenem Umbraco.sdf
-1) Otevri solution (src\TemataPodLupou.sln) ve svem oblibenem IDE
-1) Spust projekt TemataPodLupou.Web
-1) Otevre se prohlizec s URL webu, napr https://localhost:44367
-1) Prihlas se do backoffice na `/umbraco`
-    - Uzivatel: `admin@tematapodlupou.cz`
+### Instalace
+
+_Některé kroky se liší v závislosti na použitém vývojovém prostředí. Níže uvedené kroky jsou pro Visual Studio._
+
+1) Stáhněte si (nebo naklonujte) zdrojový kód z GitHubu
+1) Otevřete složku `src\TemataPodLupou.Web\App_Data`
+1) Vytvořte kopii souboru `UmbracoSeed.sdf` jménem `Umbraco.sdf`
+1) Otevřete projekt (`src\TemataPodLupou.sln`) ve svém oblibeném IDE
+1) Sestavte project pomocí menu `Build` -> `Build Solution`
+    - V tomto kroce se stáhnou potřebné knihovny
+1) Zavřete project a znovu ho otevřete
+    - Ano, toto je [opravdu potřeba](https://github.com/aspnet/RoslynCodeDomProvider/issues/98#issuecomment-1046196875) :-)
+1) Znovu sestavte projekt, tentokrát ale pomocí volby `Rebuild Solution`
+    - Jedině tak se vytvoří všechny potřebné soubory pro spuštění systému
+    - Pokud při spuštění webu dojde k chybě, nejšpíš byly špatně provedeny poslední tři kroky, opakujte je
+1) Spusťte projekt TemataPodLupou.Web pomocí `Debug` -> `Start Without Debugging`
+1) Otevře se prohlížeč s URL webu, např https://localhost:44367
+1) Přihlašte se do backoffice na `/umbraco` (nebo klikněte na tlačítko `Open Umbraco`)
+    - Uživatel: `admin@tematapodlupou.cz`
     - Heslo: `H78WFWRUdyFUVMb0IFBW`
-1) V sekci Users si vytvor vlastniho uzivatele
-1) Prihlas se pod vlastim uzivatelskym uctem
-1) V sekci Settings klikni na `uSync` a pak na tlacitko `Import`
+1) V sekci Settings klikněte na `uSync` a pak na tlačítko `Import`
 
-## Testovací obsah
+### Testovací obsah
 
-1) V sekci `Media` vytvor slozku a pojmenuj ji Uploads
-1) V sekci `Content` vytvor obsah typu `Media`, ktery reprezentuje redakci
-    1) Pro ulozeni je potreba kliknout na `Save and Publish`
-1) Pod redakci vytvor obsah typu `Submission Widget`
-    1) Vypln vsechny pole, v poli `Media Store Folder` vyber predem vytvorenou slozku Uploads
-    1) Klikni na `Save and Publish`
-1) Zobraz formular v prohlizeci
-    1) Po ulozeni se preklinki na zalozku `Info` a klikni na odkaz v boxu `Links`
-1) Vypln formular a odesli
-1) Odeslana data se zobrazi v sekci `Content` pod formularem, ktery byl odeslan
-    1) Muze byt nutne zmacknout na formular pravym tlacitkem a vybrat `Reload` 
+Během importu se do aplikace také nahrál testovací obsah tak, jak byl nakonfigurovaný pro pilotní provoz na Drbna.cz. Tento obsah je dodáván proto, aby usnadil redakcím seznámení se s  platformou. Veškerý testovací obsah je možno libovolně upravit či smazat.
 
-V případě problémů založte issue.
+V případě, že je veškerý testovací obsah smazán, je možné jej opět obnovit pomocí uSync. Nejprve je ale nutné obnovit původní obsah složek:
+    
+- `src\TemataPodLupou.Web\uSync\v8\Cotnent`
+- `src\TemataPodLupou.Web\uSync\v8\Media`
+- `src\TemataPodLupou.Web\Media`
+
+V poslední řadě pak lze vytvořit vše ručně, postupujte podle kapitoly `Návod k použití` na začátku tohoto dokumentu.
+
+## Instalace pro ostrý provoz
+
+Samotná instalace není složitá, ale neobejdete se bez pomoci odborníka či vašeho IT oddělení. Jedná se o klasický ASP.NET MVC projekt a může běžet jak v cloudu (Azure) nebo na vlastním serveru (IIS). Varianty hostingu a podrobný návod jak systém nastavit lze nalázt v [dokumentaci pro Umbraco](https://our.umbraco.com/documentation/Getting-Started/Hosting-an-Umbraco-infrastructure/).
+
+### Databáze
+
+Témata pod lupou vyžadují pro svůj běh také databázi.
+
+Pro produkční prostředí se doporučuje MS SQL Server. Pro tuto databázi je nutné pozměnit nastavení v souboru `Web.config` a po prvnotním spuštení systému spustit `uSync` (jako při lokální instalaci), který v prázdné databázi vytvoří všechny stavební bloky platformy Témata pod lupou.
+
+Pro menší redakce je ale možné použít vestavěný SQL CE (takto je systém nastaven). V tomto případě jsou data ukládána do databáze na disk a externí databáze není třeba. Tato konfigurace ale není vhodná pro prostředí, která nenabízejí trvalé uložení dat a při restartu systému hrozí ztráta dat (např některá cloudová řešení).
+
+# Podpora a hlášení chyb
+
+Tento systém je open source a byl vyvinut čistě na dobrovolnické bázi. V případě technických problémů či dotazů založte na GitHubu issue, pro případnou dlouhodobější spolupráci se obraťte na NFNZ.
