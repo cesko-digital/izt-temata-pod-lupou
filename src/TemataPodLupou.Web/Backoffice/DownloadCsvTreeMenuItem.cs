@@ -38,7 +38,7 @@ namespace TemataPodLupou.Web.Backoffice
 
             var nodeId = int.Parse(e.NodeId);
             var content = sender.Services.ContentService.GetById(nodeId);
-            if (content.ContentType.Alias != SubmissionWidget.ModelTypeAlias)
+            if (content?.ContentType.Alias != SubmissionWidget.ModelTypeAlias)
                 return;
 
             var i = new Umbraco.Web.Models.Trees.MenuItem("download", "Download Submissions");
