@@ -12,6 +12,8 @@ Témata pod Lupou je způsob, jak umožnit čtenářům participovat na výběru
 ## Jak to funguje
 Jak jsme náš prototyp testovali s redakci Drbna.cz najdete buď ve zkratce v [prezentaci](https://docs.google.com/presentation/d/1G5xDPy9cBN-K8Sk93r8C4FAU9HwOow2n/edit#slide=id.p4) nebo [případové studii](https://docs.google.com/document/d/1qQwiHLGnEgOeArn54oMb6n9xuWjT1cMnLMRvIdFVqDg/edit?usp=sharing).
 
+Video, které popisuje koncept projektu najdeš na veřejném [Google Drive](https://drive.google.com/drive/u/0/folders/1Guq8MLCB2sYQF5O-D7oylENZYgm-Mqkt) pod názvem "demo".
+
 # Návod k použití
 
 Tato sekce obsahuje návod pro správnou konfiguraci systému, vytvoření a provoz sběru témat a stažení výsledků. Kroky potřebné k prvnotní instalaci platformy jsou uvedeny v dalších sekcích.
@@ -82,6 +84,7 @@ Témta pod lupou využívají redakční systém [Umbraco](https://umbraco.com/)
 
 _Dnes je již k dispozici redakční systém Umbraco 9, který běží i na operačních systémech Linux a MacOS. Aktualizace pro případné zájemce by trvala několik hodin._
 
+
 ## Lokální instalace
 
 Lokální instalace slouží k prvotnímu seznámení se s nástrojem Témata pod lupou a dále pak k případným úpravám a nasazení do produkčního prostředí.
@@ -136,6 +139,8 @@ V případě, že je veškerý testovací obsah smazán, je možné jej opět ob
 V poslední řadě pak lze vytvořit vše ručně, postupujte podle kapitoly `Návod k použití` na začátku tohoto dokumentu.
 
 ## Instalace pro ostrý provoz
+
+Video návod na instalaci najdeš na veřejném [Google Drive](https://drive.google.com/drive/u/0/folders/1Guq8MLCB2sYQF5O-D7oylENZYgm-Mqkt).
 
 Samotná instalace není složitá, ale neobejdete se bez pomoci odborníka či vašeho IT oddělení. Jedná se o klasický ASP.NET MVC projekt a může běžet jak v cloudu (Azure) nebo na vlastním serveru (IIS). Varianty hostingu a podrobný návod jak systém nastavit lze nalázt v [dokumentaci pro Umbraco](https://our.umbraco.com/documentation/Getting-Started/Hosting-an-Umbraco-infrastructure/).
 
