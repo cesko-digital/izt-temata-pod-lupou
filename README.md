@@ -12,7 +12,7 @@ Témata pod Lupou je způsob, jak umožnit čtenářům participovat na výběru
 ## Jak to funguje
 Jak jsme náš prototyp testovali s redakci Drbna.cz najdete buď ve zkratce v [prezentaci](https://docs.google.com/presentation/d/1G5xDPy9cBN-K8Sk93r8C4FAU9HwOow2n/edit#slide=id.p4) nebo [případové studii](https://docs.google.com/document/d/1qQwiHLGnEgOeArn54oMb6n9xuWjT1cMnLMRvIdFVqDg/edit?usp=sharing).
 
-Video, které popisuje koncept projektu najdeš na veřejném [Google Drive](https://drive.google.com/drive/u/0/folders/1Guq8MLCB2sYQF5O-D7oylENZYgm-Mqkt) pod názvem "demo".
+Video, které popisuje koncept projektu, najdeš na veřejném [Google Drive](https://drive.google.com/drive/u/0/folders/1Guq8MLCB2sYQF5O-D7oylENZYgm-Mqkt) pod názvem "demo".
 
 # Návod k použití
 
